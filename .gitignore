@@ -1,0 +1,31 @@
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Caches do Python e arquivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Configurações do VS Code e IDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Arquivos do Sistema Operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos de log e variáveis de ambiente (Segurança)
+*.log
+.env
+.flaskenv
