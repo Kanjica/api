@@ -95,7 +95,12 @@ def run_startup_sql() -> None:
                         try:
                             cursor.execute(clean)
                         except pymysql.err.OperationalError as e:
-                            if e.args[0] in (1061, 1050, 1060, 1227, 1304):
+                            if e.args[0] in (1061, 1050, 1060, 1227, 1304, 1419, 1062):
+                                pass
+                            else:
+                                raise
+                        except pymysql.err.IntegrityError as e:
+                            if e.args[0] == 1062:
                                 pass
                             else:
                                 raise
