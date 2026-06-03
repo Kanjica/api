@@ -93,6 +93,7 @@ Na inicialização o servidor executa automaticamente, nesta ordem:
 | 2     | `02_triggers.sql`       | Cria os 6 triggers (validação + audit) |
 | 3     | `03_functions.sql`      | Cria fn_percentual_ocupacao e fn_atraso_medio_rota |
 | 4     | `04_views.sql`          | Cria as 3 views gerenciais             |
+| 6     | `06_inserts.sql`        | Insere dados para teste
 
 Se qualquer script falhar, a API **não sobe** — você verá o erro no terminal
 antes de qualquer endpoint ficar disponível.
